@@ -805,10 +805,10 @@ function setupEventListeners(elementId) {
         isMutedObject.isMuted = !isMutedObject.isMuted;
         if (isMutedObject.isMuted) {
             playerObject.player.mute();
-            muteBtn.innerHTML = `<img src="./images/icons/muted-icon.png" class="mute-icon">`;
+            muteBtn.innerHTML = `<img src="icons/muted-icon.png" class="mute-icon">`;
         } else {
             playerObject.player.unMute();
-            muteBtn.innerHTML = `<img src="./images/icons/unmuted-icon.png" class="mute-icon">`;
+            muteBtn.innerHTML = `<img src="icons/unmuted-icon.png" class="mute-icon">`;
         }
         // I am not sure why to get the current time here.. but I will leave this line here for now
         lastTimeObject.lastTime = playerObject.player.getCurrentTime();        
