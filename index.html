@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon" href="./images/youtube-icon.png" type="image/png">
+    <link rel="stylesheet" href="styles/youtube-homepage.css">
+    <!-- still couldn't deal with arrows lol -->
+</head>
+<body>
+
+    <div class="header">
+        <div class="left-section">
+            <img src="./images/hamburger-menu.svg" class="hamburger-menu-icon js-hamburger-menu">
+            <img src="./images/youtube-logo.svg" class="youtube-logo-img js-youtube-logo-img">            
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="search-bar js-search-bar">
+            <button class="search-icon-btn js-search-icon-btn"><img src="./images/search-icon.svg" class="search-icon-img"></button>
+            <button class="voice-search-btn js-voice-search-btn"><img src="./images/voice-search-icon.svg" class="voice-search-icon"></button>
+        </div>
+        <div class="right-section">
+            <button class="create-btn js-create-btn"><img src="./images/create-btn-icon.png" class="create-btn-icon"><span class="create-btn-content">Create</span></button>
+            <button class="notification-btn js-notification-icon"><img src="./images/notification-icon.svg" class="notification-icon"></button> 
+            <img src="./images/account-logo.jpg" class="my-account-icon js-my-account-icon">
+            <span class="right-section-kebab-menu  js-kebab-menu" >&vellip;</span>
+            <button class="sign-in-btn js-sign-in-btn"><img src="images/you-section-off-icon.jpg">Sign in</button>
+        </div>
+    </div>
+
+    <div class="create-div js-create-div">
+        <div class="js-upload-video">
+            <img src="images/upload-video-icon.webp">
+            <span>Upload video</span>
+        </div>
+
+        <div class="js-go-live">
+            <img src="images/go-live-icon.jpg" class="roundy">
+            <span>Go live</span>
+        </div>
+
+        <div class="js-create-post">
+            <img src="images/create-post-icon.png">
+            <span>Create post</span>
+        </div>
+    </div>
+
+    <div class="category-wrapper">
+        <button class="scroll-btn left">&lt;</button>
+        <div class="category-container-wrapper" >
+            <div class="category-container">
+                <button class="all-btn">All</button>
+                <button class="sictom-btn">Sictom</button>
+                <button class="Self-confidence-btn">Self-confidence</button>
+                <button class="gaming-btn">Gaming</button>
+                <button class="web-development-btn">Web Development</button>
+                <button class="computer-programming-btn">Computer programming</button>
+                <button class="music-btn">Music</button>
+                <button class="mixes-btn">Mixes</button>
+                <button class="algorithms-btn">Algorithms</button>
+                <button class="live-btn">Live</button>
+                <button class="words-btn">Words</button>
+                <button class="motivation-btn">Motivation</button>
+                <button class="information-btn">Information</button>
+                <button class="recently-uploaded-btn">Recently uploaded</button>
+                <button class="watched-btn">Watched</button>
+                <button class="new-to-you-btn">New to you</button>
+            </div> 
+        </div>   
+        <button class="scroll-btn right">&gt;</button>   
+    </div>
+
+    <div class="side-bar">
+        <button class="home-btn js-home-btn"><img src="./images/home-on-icon.svg" class="home-icon"><p class="home-btn-content">Home</p></button>
+        <button class="shorts-btn js-shorts-btn"><img src="./images/shorts-off-icon.jpg" class="shorts-icon"><p class="shorts-btn-content">Shorts</p></button>
+        <button class="subscriptions-btn js-subscriptions-btn"><img src="./images/subscriptions-off-icon.svg" class="subscriptions-icon"><p class="subscriptions-btn-content">Subscriptions</p></button>
+        <button class="you-section-btn js-you-section-btn"><img src="./images/you-section-off-icon.jpg" class="you-section-icon"><p class="you-section-btn-content">You</p></button>
+    </div>
+
+    <div class="side-menu-parent js-side-menu-parent">
+        <div class="side-menu">
+            
+            <div class="hamburger-youtube">
+                <img src="images/hamburger-menu.svg" class="hamburger-menu-icon js-side-menu-hamburger-menu">
+                <img src="images/youtube-logo.svg" class="youtube-logo-img side-menu-youtube-logo">            
+            </div>
+
+            <div>
+                <div class="js-home-btn">
+                    <img src="images/home-on-icon.svg" class="home-icon">
+                    <p class="home-btn-content">Home</p>
+                </div>
+
+                <div class="js-shorts-btn">
+                    <img src="images/shorts-off-icon.jpg" class="shorts-icon ad-css-shorts-icon">
+                    <p class="shorts-btn-content">Shorts</p>
+                </div>
+
+                <div class="js-subscriptions-btn">
+                    <img src="images/subscriptions-off-icon.svg" class="subscriptions-icon">
+                    <p class="subscriptions-btn-content">Subscriptions</p>
+                </div>
+            </div>
+
+            <p class="parag"></p>
+
+            <div class="you">
+                <p class="you-text">You <span class="you-arrow">&gt;</span></p>
+                
+                <div class="history-div js-history-div">
+                    <img src="images/history-icon.png">
+                    <p>History</p>
+                </div>
+
+                <div class="js-playlists">
+                    <img src="images/playlists-icon.jpg">
+                    <p>Playlists</p>
+                </div>
+
+                <div class="js-your-videos">
+                    <img src="images/your-videos-icon.jpg">
+                    <p>Your videos</p>
+                </div>
+
+                <div class="js-watch-later">
+                    <img src="images/save-to-watch-later-icon.webp">
+                    <p>Watch later</p>
+                </div>
+
+                <div class="js-liked-videos">
+                    <img src="images/like-icon.png">
+                    <p>Liked videos</p>
+                </div>
+            </div>
+            <p class="parag"></p>
+            <div class="settings">
+
+                <div class="js-settings">
+                    <img src="images/settings-icon.jpg" class="roundy">
+                    <p>Settings</p>
+                </div>
+
+                <div class="js-report-history">
+                    <img src="images/report-icon.svg">
+                    <p>Report history</p>
+                </div>
+
+                <div>
+                    <img src="images/help-icon.jpg" class="roundy">
+                    <p>Help</p>
+                </div>
+
+                <div>
+                    <img src="images/send-feedback-icon.jpg">
+                    <p>Send feedback</p>
+                </div>
+            </div>
+            <p class="parag"></p>
+            <div class="about-youtube">
+                <a href="https://www.youtube.com/creators/">About Press Copyright Contact us Creators Advertise Developers</a>
+                <a href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">Terms Privacy Policy & Safety How YouTube works Test new features</a>
+                <p>© 2025 Google LLC</p>
+            </div>
+        </div>        
+    </div>
+    
+    <div class="speech-recognition-parent">
+        <div class="speech-recognition">
+            
+            <button id="closeButton" class="close-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="4" x2="20" y2="20" stroke="black" stroke-width="1"/>
+                <line x1="4" y1="20" x2="20" y2="4" stroke="black" stroke-width="1"/>
+                </svg>
+            </button>
+    
+            <div class="mic-container" id="micContainer">
+                <div class="pulse-ring"></div>
+                <button class="mic-button" id="voiceButton">
+                    <img src="images/mic-icon.webp" class="mic-icon">
+                </button>
+            </div>
+    
+            <p id="speechText" class="js-text-speech">Listening..</p>
+        </div>
+    </div>
+    
+    <div class="notification-div js-notification-div">
+        <div class="small-notification-div">
+            <span class="notification-text">Notifications</span>
+            <button class="roundy-btn js-notification-settings"><img src="images/settings-icon.jpg" class="roundy"></button>
+        </div>
+        <p class="parag"></p>
+        <div class="content">
+            <img src="./images/notification-icon.svg" class="notification-icon-two">
+            <span class="bold-text">
+                Your notifications live here
+            </span>
+            <span>
+                Subscribe to your favorite channels to get notified about their latest videos.
+            </span>
+        </div>
+    </div>
+    
+    <div  class="account-stuff-parent js-account-stuff-parent"> 
+        <div class="account-stuff">
+             
+            <div class="stick-to-top">
+                <div class="align-center">
+                    <img src="./images/account-logo.jpg" class="account-icon-two">
+                    <span>Name</span>                    
+                </div>
+
+                <p class="youTubeHandle"></p>
+                <span class="a js-span-a">View your channel</span>
+            </div>
+
+            <p class="parag"></p>
+
+            <div class="scrollable-div">
+                <div>
+                    <div class="js-google-account">
+                        <img src="images/google-icon.jpg" class="roundy">
+                        <p>Google Account</p>
+                    </div>
+
+                    <div class="js-switch-account">
+                        <img src="images/switch-account-icon.jpg">
+                        <p>Switch account</p>
+                    </div>
+
+                    <div>
+                        <img src="images/sign-out-icon.png">
+                        <p>Sign out</p>
+                    </div>
+
+                </div>
+
+                <p class="parag"></p>
+
+                <div>
+                    <div class="js-youtube-studio">
+                        <img src="images/studio-icon.png" class="roundy">
+                        <p>YouTube Studio</p>
+                    </div>
+
+                    <div class="js-purchase-and-membership">
+                        <img src="images/purchase-membership.png" class="roundy">
+                        <p>Purchase and membership</p>
+                    </div>
+                </div>
+
+                <p class="parag"></p>
+
+                <div>
+                    <div class="js-your-data">
+                        <img src="images/your-data-in-youtube.jpg" class="roundy">
+                        <p>Your data in YouTube</p>
+                    </div>
+
+                    <div class="js-appearance-div">
+                        <img src="images/appearance-icon.jpg" class="appearance-icon">
+                        <p>Appearance: Device theme</p>
+                    </div>
+
+                    <div>
+                        <img src="images/language-icon.png">
+                        <p>Language: English</p>
+                    </div>
+
+                    <div>
+                        <img src="images/restricted-mode-icon.png" class="roundy">
+                        <p>Restricted Mode: Off</p>
+                    </div>
+
+                    <div>
+                        <img src="images/location-icon.png" class="roundy">
+                        <p>Location: Egypt</p>
+                    </div>
+
+                    <div>
+                        <img src="images/keyboard-icon.png">
+                        <p>Keyboard shortcuts</p>
+                    </div>
+                </div>
+
+                <p class="parag"></p>
+
+                <div>
+                    <div class="js-settings">
+                        <img src="images/settings-icon.jpg" class="roundy">
+                        <p>Settings</p>
+                    </div>                
+                </div>   
+
+
+                <p class="parag"></p>
+                    
+                <div class="block-divs">
+                    
+                    <div>
+                        <img src="images/help-icon.jpg" class="roundy">
+                        <p>Help</p>
+                    </div>
+
+                    <div>
+                        <img src="images/send-feedback-icon.jpg">
+                        <p>Send feedback</p>
+                    </div>
+
+                </div>
+            </div>    
+        </div>
+        
+    </div>
+    
+    <div class="accounts-entire-div js-accounts-entire-div">
+        
+        <div class="accounts-div">
+            <div>
+                <button class="go-back-arrow-btn js-go-back-accounts">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 19L2 12L10 5" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12H22" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <span>
+                    Accounts
+                </span>                    
+            </div>
+
+        </div>
+
+        <p class="parag"></p>
+
+        <div>
+            <span class="my-name">Name</span>
+            <span class="account-name">emailAddress@gmail.com</span>
+        </div>
+
+        <p class="parag"></p>
+
+        <div>
+            <div class="grid js-account">
+                
+                <div class="blue-border">
+                    <img src="./images/account-logo.jpg" class="account-icon-two">
+                </div>
+                
+                <div>
+                    <p>Name</p>                    
+                    <p class="brown youTubeHandle"></p>
+                    <p class="brown">No subscribers</p>
+                </div>
+
+            </div>
+
+            <div class="view-all-channels-div js-view-channels">
+                <span class="view-all-channels-span">View all channels</span>
+            </div>
+        </div>
+
+
+        <p class="parag"></p>
+
+        <div class="icons">
+            
+            <div class="js-add-account">
+                <img src="images/add-account-icon.png" >
+                <span>Add account</span>
+            </div>
+            
+            <div style="margin-bottom: 8px;">
+                <img src="images/sign-outt-icon.jpg" class="sign-out">
+                <span>Sign out</span>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="theme js-theme">   
+        <div class="appearance-div">
+            <button class="go-back-arrow-btn js-go-back-themes">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19L2 12L10 5" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12H22" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <span>
+                Appearance
+            </span>                    
+        </div>
+
+        <p class="parag"></p>
+
+        <div class="brown-too">
+            <p>Setting applies to this browser only</p>
+        </div>
+        
+        
+        <div class="theme-options">
+            
+            <div>
+                <span> 
+                    <span> 
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 16L12 22L26 8" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </span>
+                
+                <p>Use device theme</p>
+            </div>
+
+            <div>
+                <span> 
+                    
+                </span>
+                <p>Dark theme</p>
+            </div>
+
+            <div>
+                <span>
+                    
+                </span>
+                
+                <p>Light theme</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="customPrompt">
+        <p>For Better Experience Log In Now</p>
+        <button class="lets-go js-lets-go">Let's go</button>
+        <button class="remind-me js-remind-me-later">Remind me later</button>
+    </div> 
+
+
+    <div class="provide-info-div" id="js-provide-info-div">
+        
+        <div>
+            <button class="x-btn js-x-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="4" x2="20" y2="20" stroke="black" stroke-width="1"/>
+                <line x1="4" y1="20" x2="20" y2="4" stroke="black" stroke-width="1"/>
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="instructions-div">
+            <ul style="list-style-type: upper-alpha;">
+                <li>
+                    Go to YouTube and click on the You icon in left side near the bottom
+                </li>
+                <li>
+                    Click on your account logo
+                </li>
+                <li>
+                    Copy the search engine link and paste it below :-
+                </li>
+                <input type="text" placeholder="https://www.youtube.com/channel/UC63L3el0OBeLS6rK95LjIBA" class="js-input-1">
+                <li>
+                    Copy your youTube handle and paste it below :-
+                </li>
+                <input type="text" placeholder="@Abdullah-qx3fh" class="js-input-2">
+            </ul>
+        </div>
+            
+
+        
+        <button class="submit-btn js-submit-btn">Submit</button>
+        
+    </div>
+
+    <div  class="account-stuff-parent js-account-stuff-lil-div">
+        <div class="account-stuff">
+            <div class="scrollable-div">
+                
+                <div>
+                    <div class="js-your-data">
+                        <img src="images/your-data-in-youtube.jpg" class="roundy">
+                        <p>Your data in YouTube</p>
+                    </div>
+
+                    <div class="js-appearance-div">
+                        <img src="images/appearance-icon.jpg" class="appearance-icon">
+                        <p>Appearance: Device theme</p>
+                    </div>
+
+                    <div>
+                        <img src="images/language-icon.png">
+                        <p>Language: English</p>
+                    </div>
+
+                    <div>
+                        <img src="images/restricted-mode-icon.png" class="roundy">
+                        <p>Restricted Mode: Off</p>
+                    </div>
+
+                    <div>
+                        <img src="images/location-icon.png" class="roundy">
+                        <p>Location: Egypt</p>
+                    </div>
+
+                    <div>
+                        <img src="images/keyboard-icon.png">
+                        <p>Keyboard shortcuts</p>
+                    </div>
+                </div>
+
+                <p class="parag"></p>
+
+                <div>
+                    <div class="js-settings">
+                        <img src="images/settings-icon.jpg" class="roundy">
+                        <p>Settings</p>
+                    </div>                
+                </div>   
+
+
+                <p class="parag"></p>
+                    
+                <div class="block-divs">
+                    
+                    <div>
+                        <img src="images/help-icon.jpg" class="roundy">
+                        <p>Help</p>
+                    </div>
+
+                    <div>
+                        <img src="images/send-feedback-icon.jpg">
+                        <p>Send feedback</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="content-container js-content-container"></div>
+
+    
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="module" src="scripts/youtube-homepage.js" defer></script>
+</body>
+</html>
