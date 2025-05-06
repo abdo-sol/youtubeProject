@@ -63,8 +63,8 @@ function generateHTML(){
                     </iframe>
 
 
-                    <button class="mute-btn js-mute-btn" data-mute-btn-id="${video.id}"><img src="./images/icons/muted-icon.png" class="mute-icon"></button>
-                    <button class="cc-btn js-cc-btn" data-cc-btn-id="${video.id}"><img src="./images/icons/cc-on-icon.png" class="cc-icon"></button>
+                    <button class="mute-btn js-mute-btn" data-mute-btn-id="${video.id}"><img src="icons/muted-icon.png" class="mute-icon"></button>
+                    <button class="cc-btn js-cc-btn" data-cc-btn-id="${video.id}"><img src="icons/cc-on-icon.png" class="cc-icon"></button>
                     
                     
                     <p class="video-time js-video-time" data-video-time-id="${video.id}">${video.videoLength}</p>
@@ -822,10 +822,10 @@ function setupEventListeners(elementId) {
         if (captionsOnObject.captionsOn) {
             playerObject.player.loadModule("captions");
             playerObject.player.setOption("captions", "track", { languageCode: "en" });
-            ccBtn.innerHTML = `<img src="./images/icons/cc-on-icon.png" class="cc-icon">`;
+            ccBtn.innerHTML = `<img src="icons/cc-on-icon.png" class="cc-icon">`;
         } else {
             playerObject.player.setOption("captions", "track", {});
-            ccBtn.innerHTML = `<img src="./images/icons/cc-off-icon.jpg" class="cc-icon">`;
+            ccBtn.innerHTML = `<img src="icons/cc-off-icon.jpg" class="cc-icon">`;
         }
 
         // not sure why have it here either
