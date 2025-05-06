@@ -63,8 +63,8 @@ function generateHTML(){
                     </iframe>
 
 
-                    <button class="mute-btn js-mute-btn" data-mute-btn-id="${video.id}"><img src="muted-icon.png" class="mute-icon"></button>
-                    <button class="cc-btn js-cc-btn" data-cc-btn-id="${video.id}"><img src="cc-on-icon.png" class="cc-icon"></button>
+                    <button class="mute-btn js-mute-btn" data-mute-btn-id="${video.id}"><img src="./images/icons/muted-icon.png" class="mute-icon"></button>
+                    <button class="cc-btn js-cc-btn" data-cc-btn-id="${video.id}"><img src="./images/icons/cc-on-icon.png" class="cc-icon"></button>
                     
                     
                     <p class="video-time js-video-time" data-video-time-id="${video.id}">${video.videoLength}</p>
@@ -99,27 +99,27 @@ function generateHTML(){
                     <div class="first-div"> 
 
                         <div class="add-to-queue">
-                            <img src="add-to-queue-icon.png">
+                            <img src="./images/icons/add-to-queue-icon.png">
                             <a href="#">Add to queue</a>
                         </div>
 
                         <div>
-                            <img src="save-to-watch-later-icon.webp">
+                            <img src="./images/icons/save-to-watch-later-icon.webp">
                             <a href="#">Save to Watch later</a>
                         </div>
 
                         <div>
-                            <img src="save-to-playlist-icon.jpg" class="save-to-playlist-icon">
+                            <img src="./images/icons/save-to-playlist-icon.jpg" class="save-to-playlist-icon">
                             <a href="#">Save to playlist</a>
                         </div>
 
                         <div>
-                            <img src="download-icon.jpg">
+                            <img src="./images/icons/download-icon.jpg">
                             <a href="#">Download</a>
                         </div>
 
                         <div>
-                            <img src="share-icon.png">
+                            <img src="./images/icons/share-icon.png">
                             <a href="#">Share</a>
                         </div>
                     </div>     
@@ -127,17 +127,17 @@ function generateHTML(){
                     <div class="second-div">
 
                         <div>
-                            <img src="not-interested-icon.jpg" class="not-interested-icon">
+                            <img src="./images/icons/not-interested-icon.jpg" class="not-interested-icon">
                             <a href="#">Not interested</a>
                         </div>
 
                         <div>
-                            <img src="dont-recommend-channel-icon.jpg" class="dont-recommend-channel-icon">
+                            <img src="./images/icons/dont-recommend-channel-icon.jpg" class="dont-recommend-channel-icon">
                             <a href="#" class="dont-recommend-channel">Don't recommend channel</a>
                         </div>
 
                         <div class="report">
-                            <img src="report-icon.svg">
+                            <img src="./images/icons/report-icon.svg">
                             <a href="#">Report</a>
                         </div>
                     </div>
@@ -805,10 +805,10 @@ function setupEventListeners(elementId) {
         isMutedObject.isMuted = !isMutedObject.isMuted;
         if (isMutedObject.isMuted) {
             playerObject.player.mute();
-            muteBtn.innerHTML = `<img src="muted-icon.png" class="mute-icon">`;
+            muteBtn.innerHTML = `<img src="./images/icons/muted-icon.png" class="mute-icon">`;
         } else {
             playerObject.player.unMute();
-            muteBtn.innerHTML = `<img src="unmuted-icon.png" class="mute-icon">`;
+            muteBtn.innerHTML = `<img src="./images/icons/unmuted-icon.png" class="mute-icon">`;
         }
         // I am not sure why to get the current time here.. but I will leave this line here for now
         lastTimeObject.lastTime = playerObject.player.getCurrentTime();        
@@ -822,10 +822,10 @@ function setupEventListeners(elementId) {
         if (captionsOnObject.captionsOn) {
             playerObject.player.loadModule("captions");
             playerObject.player.setOption("captions", "track", { languageCode: "en" });
-            ccBtn.innerHTML = `<img src="cc-on-icon.png" class="cc-icon">`;
+            ccBtn.innerHTML = `<img src="./images/icons/cc-on-icon.png" class="cc-icon">`;
         } else {
             playerObject.player.setOption("captions", "track", {});
-            ccBtn.innerHTML = `<img src="cc-off-icon.jpg" class="cc-icon">`;
+            ccBtn.innerHTML = `<img src="./images/icons/cc-off-icon.jpg" class="cc-icon">`;
         }
 
         // not sure why have it here either
