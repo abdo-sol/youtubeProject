@@ -770,11 +770,11 @@ function setupEventListeners(elementId) {
 
     });
 
-    videoBox.addEventListener('click', (event) => {
-        event.stopPropagation();
-        videoBox.style.backgroundColor = '#e0e0e0';
-        window.location.href = `https://www.youtube.com/watch?v=${videoLink}`;
-    });
+    // videoBox.addEventListener('click', (event) => {
+    //     event.stopPropagation();
+    //     videoBox.style.backgroundColor = '#e0e0e0';
+    //     window.location.href = `https://www.youtube.com/watch?v=${videoLink}`;
+    // });
 
     videoBox.addEventListener("mouseenter", () => {
         thumbnail.style.opacity = '0';
