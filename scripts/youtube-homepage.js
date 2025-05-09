@@ -773,6 +773,7 @@ function setupEventListeners(elementId) {
     // videoBox.addEventListener('click', (event) => {
     //     event.stopPropagation();
     //     videoBox.style.backgroundColor = '#e0e0e0';
+    //     console.log('transferring to https://www.youtube.com/watch?v');
     //     window.location.href = `https://www.youtube.com/watch?v=${videoLink}`;
     // });
 
